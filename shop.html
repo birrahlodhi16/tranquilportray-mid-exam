@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop | Tranquil Portray</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ==============================
+         HEADER
+    ============================== -->
+
+    <header class="main-header">
+
+        <div class="header-container">
+
+            <a href="index.html" class="logo">
+                Tranquil Portray
+            </a>
+
+            <nav class="main-nav">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="shop.html" class="active">
+                    Shop
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+            <div class="header-actions">
+                <button class="header-icon" aria-label="Search"
+                    onclick="document.getElementById('searchOverlay').classList.add('show')"></button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+                <button class="header-icon" id="cartButton" aria-label="Shopping cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+    <!-- ==============================
+     SHOP CONTENT
+============================== -->
+
+    <section class="shop-content">
+
+        <div class="shop-container">
+
+            <!-- SHOP TITLE -->
+
+            
+
+            <!-- SHOP FILTER AREA -->
+
+            <div class="shop-filter">
+
+                <div class="shop-categories">
+
+                    <button class="shop-category active" data-filter="all">
+                        All Products
+                    </button>
+
+                    <button class="shop-category" data-filter="painting">
+                        Paintings
+                    </button>
+
+                    <button class="shop-category" data-filter="keychain">
+                        Clay Keychains
+                    </button>
+
+                </div>
+
+
+                <div class="shop-actions">
+
+                    <button class="shop-action">
+                        <i class="fa-solid fa-filter"></i>
+                        Filter
+                    </button>
+
+                    <button class="shop-action">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Search
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ==============================
+     SHOP PRODUCTS
+============================== -->
+
+    <section class="shop-products">
+
+        <div class="shop-products-container">
+
+
+            <!-- PAINTING 1 -->
+            <div class="shop-product-card" data-category="painting">
+
+                <div class="shop-product-image">
+
+                    <img src="images/painting_calligraphy.png" alt="Calligraphy Painting">
+
+                    <button class="shop-quick-view">
+                        Quick View
+                    </button>
+
+                </div>
+
+                <div class="shop-product-info">
+
+                    <h3>Calligraphy Painting</h3>
+
+                    <p>Rs. 2,500</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PAINTING 2 -->
+            <div class="shop-product-card" data-category="painting">
+
+                <div class="shop-product-image">
+
+                    <img src="images/painting_red_calligraphy.png" alt="Red Calligraphy Painting">
+
+                    <button class="shop-quick-view">
+                        Quick View
+                    </button>
+
+                </div>
+
+                <div class="shop-product-info">
+
+                    <h3>Red Calligraphy Painting</h3>
+
+                    <p>Rs. 2,500</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PAINTING 3 -->
+            <div class="shop-product-card" data-category="painting">
+
+                <div class="shop-product-image">
+
+                    <img src="images/painting_swans.png" alt="Swans Painting">
+
+                    <button class="shop-quick-view">
+                        Quick View
+                    </button>
+
+                </div>
+
+                <div class="shop-product-info">
+
+                    <h3>Swans Painting</h3>
+
+                    <p>Rs. 3,000</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PAINTING 4 -->
+            <div class="shop-product-card" data-category="painting">
+
+                <div class="shop-product-image">
+
+                    <img src="images/painting_beach.png" alt="Beach Painting">
+
+                    <button class="shop-quick-view">
+                        Quick View
+                    </button>
+
+                </div>
+
+                <div class="shop-product-info">
+
+                    <h3>Beach Painting</h3>
+
+                    <p>Rs. 3,000</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- KEYCHAIN 1 -->
+            <div class="shop-product-card" data-category="keychain">
+
+                <div class="shop-product-image">
+
+                    <img src="images/keychain_chick.png" alt="Chick Clay Keychain">
+
+                    <button class="shop-quick-view">
+                        Quick View
+                    </button>
+
+                </div>
+
+                <div class="shop-product-info">
+
+                    <h3>Chick Clay Keychain</h3>
+
+                    <p>Rs. 500</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- KEYCHAIN 2 -->
+            <div class="shop-product-card" data-category="keychain">
+
+                <div class="shop-product-image">
+
+                    <img src="images/keychain_frog.png" alt="Frog Clay Keychain">
+
+                    <button class="shop-quick-view">
+                        Quick View
+                    </button>
+
+                </div>
+
+                <div class="shop-product-info">
+
+                    <h3>Frog Clay Keychain</h3>
+
+                    <p>Rs. 500</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- KEYCHAIN 3 -->
+            <div class="shop-product-card" data-category="keychain">
+
+                <div class="shop-product-image">
+
+                    <img src="images/keychain_bear.png" alt="Bear Clay Keychain">
+
+                    <button class="shop-quick-view">
+                        Quick View
+                    </button>
+
+                </div>
+
+                <div class="shop-product-info">
+
+                    <h3>Bear Clay Keychain</h3>
+
+                    <p>Rs. 500</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- KEYCHAIN 4 -->
+            <div class="shop-product-card" data-category="keychain">
+
+                <div class="shop-product-image">
+
+                    <img src="images/keychain_penguin.png" alt="Penguin Clay Keychain">
+
+                    <button class="shop-quick-view">
+                        Quick View
+                    </button>
+
+                </div>
+
+                <div class="shop-product-info">
+
+                    <h3>Penguin Clay Keychain</h3>
+
+                    <p>Rs. 500</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ==============================
+     QUICK VIEW POPUP
+============================== -->
+
+    <div class="quick-view-modal" id="quickViewModal">
+
+        <div class="quick-view-box">
+
+            <button class="quick-view-close" id="quickViewClose">
+                &times;
+            </button>
+
+            <div class="quick-view-image">
+
+                <img id="quickViewImage" src="" alt="Product">
+
+            </div>
+
+            <div class="quick-view-details">
+
+                <h2 id="quickViewName">
+                    Product Name
+                </h2>
+
+                <p id="quickViewPrice">
+                    Rs. 0
+                </p>
+
+                <button class="quick-view-cart" id="quickViewAddToCart">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+    <!-- ==============================
+     FOOTER
+============================== -->
+
+    <footer class="main-footer">
+
+        <div class="footer-container">
+
+            <!-- CATEGORY -->
+            <div class="footer-column">
+
+                <h3>Categories</h3>
+
+                <a href="#">Paintings</a>
+                <a href="#">Clay Keychains</a>
+                <a href="#">Handmade Art</a>
+
+            </div>
+
+
+            <!-- HELP -->
+            <div class="footer-column">
+
+                <h3>Help</h3>
+
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">FAQs</a>
+
+            </div>
+
+
+            <!-- GET IN TOUCH -->
+            <div class="footer-column">
+
+                <h3>Get In Touch</h3>
+
+                <p>
+                    Have a question about our handmade
+                    products? We'd love to hear from you.
+                </p>
+
+                <p>
+                    Email: tranquilportray@gmail.com
+                </p>
+
+            </div>
+
+
+            <!-- NEWSLETTER -->
+            <div class="footer-column">
+
+                <h3>Newsletter</h3>
+
+                <p>
+                    Subscribe to receive updates about
+                    new handmade creations.
+                </p>
+
+                <div class="footer-newsletter">
+
+                    <input type="email" placeholder="Enter your email">
+
+                    <button>SUBSCRIBE</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- COPYRIGHT -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Tranquil Portray. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+    
+    
+
+    <script>
+        const shopCategories = document.querySelectorAll(".shop-category");
+        const shopProducts = document.querySelectorAll(".shop-product-card");
+
+        shopCategories.forEach(function (category) {
+
+            category.addEventListener("click", function () {
+
+                shopCategories.forEach(function (button) {
+                    button.classList.remove("active");
+                });
+
+                category.classList.add("active");
+
+                const selectedCategory = category.getAttribute("data-filter");
+
+                shopProducts.forEach(function (product) {
+
+                    const productCategory = product.getAttribute("data-category");
+
+                    if (
+                        selectedCategory === "all" ||
+                        selectedCategory === productCategory
+                    ) {
+                        product.style.display = "";
+                    } else {
+                        product.style.display = "none";
+                    }
+
+                });
+
+            });
+
+        });
+    </script>
+
+    <script>
+        /* ==============================
+           QUICK VIEW
+        ============================== */
+
+        const quickViewButtons =
+            document.querySelectorAll(".shop-quick-view");
+
+        const quickViewModal =
+            document.getElementById("quickViewModal");
+
+        const quickViewClose =
+            document.getElementById("quickViewClose");
+
+        const quickViewImage =
+            document.getElementById("quickViewImage");
+
+        const quickViewName =
+            document.getElementById("quickViewName");
+
+        const quickViewPrice =
+            document.getElementById("quickViewPrice");
+
+
+        quickViewButtons.forEach(function (button) {
+
+            button.addEventListener("click", function () {
+
+                const product =
+                    button.closest(".shop-product-card");
+
+                const image =
+                    product.querySelector("img");
+
+                const name =
+                    product.querySelector("h3");
+
+                const price =
+                    product.querySelector("p");
+
+
+                quickViewImage.src = image.src;
+
+                quickViewImage.alt = image.alt;
+
+                quickViewName.textContent =
+                    name.textContent;
+
+                quickViewPrice.textContent =
+                    price.textContent;
+
+
+                quickViewModal.classList.add("show");
+
+            });
+
+        });
+
+
+        /* CLOSE BUTTON */
+
+        quickViewClose.addEventListener("click", function () {
+
+            quickViewModal.classList.remove("show");
+
+        });
+
+
+        /* CLICK OUTSIDE POPUP */
+
+        quickViewModal.addEventListener("click", function (event) {
+
+            if (event.target === quickViewModal) {
+
+                quickViewModal.classList.remove("show");
+
+            }
+
+        });
+
+
+        /* ESCAPE KEY */
+
+        document.addEventListener("keydown", function (event) {
+
+            if (event.key === "Escape") {
+
+                quickViewModal.classList.remove("show");
+
+            }
+
+        });
+    </script>
+    <script>
+        /* ==============================
+           ADD TO CART
+        ============================== */
+
+        const addToCartButton =
+            document.getElementById("quickViewAddToCart");
+
+        const cartCount =
+            document.querySelector(".cart-count");
+
+
+        /* GET SAVED CART COUNT */
+
+        let savedCartCount =
+            parseInt(localStorage.getItem("cartCount")) || 0;
+
+        cartCount.textContent = savedCartCount;
+
+
+        /* ADD PRODUCT */
+
+        addToCartButton.addEventListener("click", function () {
+
+            savedCartCount++;
+
+            localStorage.setItem(
+                "cartCount",
+                savedCartCount
+            );
+
+            cartCount.textContent =
+                savedCartCount;
+
+            alert("Product added to cart!");
+
+        });
+    </script>
+    <script>
+        /* ================================
+           SEARCH
+        ================================ */
+
+        const searchOverlay =
+            document.getElementById("searchOverlay");
+
+        const searchClose =
+            document.getElementById("searchClose");
+
+        const searchInput =
+            document.getElementById("searchInput");
+
+        const searchButton =
+            document.getElementById("searchButton");
+        const searchIcon =
+            document.querySelector('.header-icon[aria-label="Search"]');
+
+        searchClose.addEventListener("click", function () {
+
+            searchOverlay.classList.remove("show");
+
+        });
+
+
+        searchButton.addEventListener("click", function () {
+
+            const searchText =
+                searchInput.value.toLowerCase().trim();
+
+            const products =
+                document.querySelectorAll(".shop-product-card");
+
+            products.forEach(function (product) {
+
+                const productName =
+                    product.querySelector("h3")
+                        .textContent
+                        .toLowerCase();
+
+                if (productName.includes(searchText)) {
+                    product.style.display = "";
+                } else {
+                    product.style.display = "none";
+                }
+
+            });
+
+            searchOverlay.classList.remove("show");
+
+        });
+        if (searchIcon && searchOverlay) {
+            searchIcon.addEventListener("click", function () {
+                searchOverlay.classList.add("show");
+
+                if (searchInput) {
+                    searchInput.focus();
+                }
+            });
+        }
+    </script>
+
+
+</body>
+
+</html>
